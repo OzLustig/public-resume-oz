@@ -1,6 +1,6 @@
 # # Resume app
 
-![alt text](https://imgur.com/ZF6R3TQ)
+![alt text](https://i.imgur.com/ZF6R3TQ.png)
 
 Resume web application, built using (Node.JS, Express.JS) + (Angular8, Bulma, Font Awesome, Bootstrap)
 ## Getting Started
