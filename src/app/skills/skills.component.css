@@ -1,0 +1,105 @@
+.normal-size {
+  font-size: 20px;
+}
+
+.eighty-percents-width {
+  width: 80%;
+  padding-left: 300px;
+}
+
+.section.skills {
+  margin-top: -14rem;
+  padding-bottom: 1rem;
+}
+
+.section {
+  padding: 5rem 1.5rem;
+  padding-bottom: 10rem;
+}
+
+.container.is-narrow {
+  max-width: 1200px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+.section.skills .box {
+  padding: 0;
+}
+
+.section.skills .box .content .columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.columns {
+  display: flex;
+}
+
+.section.skills .box .content .columns .column {
+  border-bottom: 0px solid #e6ecf8;
+  border-right: 1px solid #e6ecf8;
+  padding: 60px 35px;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+.sixty-percents-width {
+  width: 90%;
+  padding-left: 40px;
+}
+
+.sixty-percents-width .blue-color {
+  color: cornflowerblue;
+}
+
+background-color {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #373b44, #4286f4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #373b44,
+    #4286f4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+
+.text-centered {
+  text-align: center !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.headline {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.box {
+  border-radius: 12px;
+}
+
+.is-primary {
+  background-color: cornflowerblue;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.push-left {
+  margin-right: 2rem;
+}

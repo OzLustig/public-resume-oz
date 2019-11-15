@@ -1,0 +1,139 @@
+<nav class="navbar is-transparent is-planner">
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      <img src="/assets/brand/brand.png" alt="Oz Lustig | Full stack Developer" class="image" />
+    </a>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <button class="button nav-btn" (click)="resetForm()">
+            <span class="icon is-small">
+              <i class="fas fa-undo"></i>
+            </span>
+          </button>
+        </div>
+        <div class="navbar-item">
+          <a class="nav-btn" href="">
+            <span class="icon is-small">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="is-form-page">
+  <section class="is-white has-text-centered">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-three-quarters">
+          <img src="assets/avatar.png" class="avatar" />
+        </div>
+      </div>
+      <h1 class="title has-text-centered">
+        Thanks for taking the time to reach out.
+        <br />How can I help you?
+      </h1>
+      <form [formGroup]="helpForm" (ngSubmit)="onSubmit()">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control is-expanded">
+                <input
+                  class="input is-large"
+                  name="name"
+                  type="text"
+                  formControlName="name"
+                  required
+                />
+                <div
+                  *ngIf="name.invalid && (name.dirty || name.touched)"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="(name?.errors)['required']">
+                    Name is required
+                  </div>
+                  <div *ngIf="(name?.errors)['minlength']">
+                    Name must be atleast 4 characters long
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control is-expanded">
+                <input
+                  class="input is-large"
+                  name="email"
+                  type="email"
+                  formControlName="email"
+                  required
+                />
+                <div
+                  *ngIf="email.invalid && (email.dirty || email.touched)"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="email.errors['required']">
+                    Mail address is required
+                  </div>
+                  <div *ngIf="(email?.errors)['minlength']">
+                    Email must be atleast 4 characters long
+                  </div>
+                  <div *ngIf="(email?.errors)['email']">
+                    Please enter a valid email address
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control is-expanded">
+                <textarea
+                  class="textarea is-large"
+                  name="message"
+                  rows="6"
+                  formControlName="message"
+                  required
+                ></textarea>
+                <div
+                  *ngIf="message.invalid && (message.dirty || message.touched)"
+                  class="alert alert-danger"
+                >
+                  <div *ngIf="message.errors['required']">
+                    No message was entered
+                  </div>
+                  <div *ngIf="(message?.errors)['minlength']">
+                    That's all you had to say? minimum message length is 10 characters
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div class="field">
+              <div class="control">
+                <button
+                  type="submit"
+                  class="button is-primary is-outlined is-medium is-fullwidth is-rounded"
+                  [disabled]="!formValidated()"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>

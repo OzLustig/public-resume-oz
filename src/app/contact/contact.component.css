@@ -1,0 +1,76 @@
+background-color {
+  background: #373b44; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #373b44, #4286f4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #373b44,
+    #4286f4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+
+.text-centered {
+  text-align: center !important;
+}
+
+.box {
+  border-radius: 12px;
+}
+
+.is-primary {
+  background-color: cornflowerblue;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.image {
+  height: 8rem;
+  display: initial;
+  padding-bottom: 2rem;
+}
+
+.eighty-percents-width {
+  width: 40%;
+}
+
+.padding {
+  padding-top: 2rem;
+}
+
+.border-it {
+  font-size: 1.18rem;
+}
+
+.column a {
+  font-size: 1em;
+  border-radius: 50%;
+  border: solid lightgray;
+  color: white;
+  background-color: transparent;
+}
+.column a:hover {
+  background-color: white;
+  border-color: white;
+  color: cornflowerblue;
+}
+
+.gray-color {
+  color: lightgray;
+}
+
+.custom-width {
+  width: 50%;
+}
+
+.add-padding {
+  padding-top: 2rem;
+}
+
+.remove-customs {
+  font-size: 2em;
+  border-radius: 0;
+  border: transparent;
+  color: transparent;
+  background-color: transparent;
+}

@@ -1,0 +1,50 @@
+.navbar {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
+}
+
+.container {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.say-hello-button {
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+.say-hello-button:hover {
+  background-color: cornflowerblue;
+  color: white;
+  text-decoration: white;
+  text-decoration-color: white;
+}
+
+.github-btn {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.github-btn:hover {
+  color: cornflowerblue;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.image {
+  height: 4rem;
+}
+
+button {
+  padding-right: 1rem;
+  padding-right: 1rem;
+}

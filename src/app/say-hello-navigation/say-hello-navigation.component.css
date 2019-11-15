@@ -1,0 +1,73 @@
+.background-color {
+  background-color: cornflowerblue;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+}
+
+.text-settings {
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: 'europa', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #293347;
+}
+
+.nav-btn {
+  border-color: cornflowerblue;
+  background-color: transparent;
+  border-color: transparent;
+  color: cornflowerblue !important;
+}
+
+.navbar {
+  padding: 1.2rem 0;
+  box-shadow: none;
+  z-index: auto;
+}
+
+.navbar > .container {
+  align-items: stretch;
+  display: flex;
+  min-height: 3.25rem;
+  width: 100%;
+}
+
+.image {
+  height: 4rem;
+}
+
+.navbar.is-planner {
+  border-bottom: 1px solid #e6ecf8;
+}
+
+.image-height {
+  height: 4rem;
+  margin-top: 10rem;
+}
+
+.is-form-page .container .avatar {
+  width: 84px;
+  margin: -50px auto 50px;
+  z-index: 10;
+}
+
+form {
+  padding-left: 20rem;
+  margin-right: 20rem;
+}
+
+.button.is-primary.is-outlined {
+  background-color: transparent;
+  border-color: cornflowerblue;
+  color: cornflowerblue;
+}
+
+.button.is-primary.is-outlined:hover {
+  background-color: cornflowerblue;
+  border-color: cornflowerblue;
+  color: white;
+}
